@@ -1,0 +1,10 @@
+<h2 *ngIf="!showData">Nothing to Show</h2>
+
+<div *ngIf="showData"> 
+    <h2>{{nodeData.Header}}</h2>
+
+    <mat-list role="list">
+        <mat-list-item role="listitem" *ngFor="let Row of nodeData.Rows">{{Row}}</mat-list-item>
+    </mat-list>
+</div>
+
